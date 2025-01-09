@@ -100,9 +100,7 @@ header {
   align-items: center;
   border-bottom: 1px solid #b6b1b1;
 }
-.myntra_home {
-  height: 45px;
-}
+
 .logo_container {
   margin-left: 4%;
 }
@@ -153,7 +151,7 @@ header {
 }
 .search_input {
   color: #696e79;
-  background-color: #f5f5f6;
+  background-color: #e9e9ec;
   flex-grow: 1;
   height: 40px;
   border: 0;
@@ -173,7 +171,6 @@ header {
   align-items: center;
 }
 
-/* Main section */
 .banner_container {
   margin: 40px 0;
 }
@@ -228,28 +225,35 @@ header {
   padding-bottom: 5px;
 }
 
-.copyright {
-  color: #94969f;
-  text-align: end;
-  padding: 15px;
-}
-
 .items-container {
   width: 80%;
   margin: 40px 10%;
 }
 .item-container {
-  width: 250px;
+  width: 260px;
   margin: 10px;
+  border-radius: 18px;
 }
 .item-image {
-  width: 250px;
+  width: 260px;
   height: 250px;
   object-fit: cover;
+  border-top-left-radius: 18px;
+  border-top-right-radius:18px;
+  margin-bottom:15px;
+  
 }
+
+.item-container:hover {
+  border: 1px solid rgba(7, 7, 7, 0.37) ;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(7, 7, 7, 0.37);
+}
+
 .rating {
   font-size: 12px;
   font-weight: 700;
+  padding:8px;
 }
 .company-name {
   margin-top: 15px;
@@ -261,6 +265,7 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  padding:8px;
 }
 .item-name {
   color: #535766;
@@ -273,6 +278,7 @@ header {
   white-space: nowrap;
   font-weight: 400;
   display: block;
+  padding:8px;
 }
 .price {
   margin-top: 10px;
@@ -285,24 +291,14 @@ header {
   font-size: 14px;
   font-weight: 700;
   color: #282c3f;
+  padding:8px;
 }
-.original-price {
-  text-decoration: line-through;
-  color: #7e818c;
-  font-weight: 400;
-  margin-left: 5px;
-  font-size: 12px;
-}
-.discount {
-  color: #ff905a;
-  font-weight: 400;
-  font-size: 12px;
-  margin-left: 5px;
-}
+
+
 .btn-add-bag {
-  margin-top: 8px;
+  margin: 8px;
   font-size: 18px;
-  width: 100%;
+  width: 234px;
   background-color: lightgreen;
   border: none;
   padding: 5px 15px;
