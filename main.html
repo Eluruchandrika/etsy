@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <nav class="navbar navbar-light bg-light" >
+        <div class="container-fluid gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 24" aria-hidden="true" focusable="false" width="80"  fill="#f1641e"><path d="M6.547,3.125v6.008c0,0,2.117,0,3.25-0.086c0.891-0.156,1.055-0.242,1.219-1.133l0.328-1.305h0.969l-0.164,2.852 l0.086,2.922h-0.977l-0.242-1.141c-0.242-0.812-0.57-0.977-1.219-1.055c-0.812-0.086-3.25-0.086-3.25-0.086v5.039 c0,0.969,0.492,1.383,1.625,1.383h3.414c1.055,0,2.109-0.086,2.766-1.625l0.883-1.953h0.82c-0.086,0.406-0.492,3.984-0.57,4.789 c0,0-3.086-0.078-4.383-0.078H5.25l-3.492,0.078v-0.883l1.133-0.25c0.82-0.164,1.062-0.406,1.062-1.055 c0,0,0.086-2.195,0.086-5.852c0-3.648-0.086-5.844-0.086-5.844c0-0.727-0.242-0.891-1.062-1.055L1.758,2.555V1.664l3.414,0.07h6.5 c1.297,0,3.484-0.234,3.484-0.234s-0.078,1.375-0.164,4.625h-0.891l-0.328-1.141c-0.32-1.461-0.805-2.188-1.703-2.188H6.961 C6.547,2.797,6.547,2.875,6.547,3.125z M19.703,3.766h0.977V7.18l3.336-0.164l-0.164,1.547l-3.25-0.25v6.016 c0,1.703,0.57,2.359,1.547,2.359c0.883,0,1.539-0.492,1.781-0.898l0.484,0.57c-0.484,1.133-1.859,1.703-3.164,1.703 c-1.617,0-2.93-0.969-2.93-2.836V8.398h-1.938V7.586C18.008,7.422,19.219,6.445,19.703,3.766z M26.695,14.242l0.648,1.547 c0.242,0.648,0.812,1.305,2.109,1.305c1.383,0,1.953-0.734,1.953-1.625c0-2.766-5.445-1.953-5.445-5.688c0-2.109,1.703-3.094,3.898-3.094c0.977,0,2.438,0.164,3.172,0.492c-0.164,0.812-0.25,1.867-0.25,2.68l-0.805,0.078l-0.57-1.625 c-0.164-0.398-0.82-0.727-1.625-0.727c-0.977,0-1.953,0.406-1.953,1.461c0,2.516,5.609,1.953,5.609,5.688c0,2.117-1.867,3.25-4.148,3.25c-1.703,0-3.414-0.656-3.414-0.656c0.164-0.969,0.086-2.023,0-3.086H26.695z M33.031,22.039 c0.242-0.891,0.406-2.023,0.57-3.086l0.891-0.078l0.328,1.703c0.078,0.406,0.32,0.734,0.969,0.734c1.055,0,2.438-0.648,3.742-2.922 c-0.578-1.383-2.281-5.844-3.828-9.258c-0.406-0.898-0.484-0.977-1.047-1.141l-0.414-0.156v-0.82l2.445,0.086l3-0.164V7.75 l-0.734,0.164c-0.57,0.078-0.805,0.398-0.805,0.727c0,0.086,0,0.164,0.078,0.328c0.156,0.492,1.461,4.141,2.438,6.578c0.805-1.703,2.352-5.523,2.594-6.172c0.086-0.328,0.164-0.406,0.164-0.648c0-0.414-0.242-0.656-0.805-0.812L42.039,7.75V6.938 l2.281,0.078l2.109-0.078V7.75l-0.406,0.32c-0.812,0.328-0.898,0.406-1.219,1.062l-3.57,8.359 c-2.117,4.797-4.312,5.203-5.852,5.203C34.406,22.695,33.672,22.445,33.031,22.039z"></path></svg>
+
+
+            <div class="categires d-flex gap-2 m-2 toggle-button" onclick="toggleButton()" >
+              <i class="bi bi-list"></i>
+              <h6>categories</h6>
+            </div>
+
+            <form class="d-flex flex-grow-1 mx-2 ">
+                <input class="form-control me-2" type="search" placeholder="Search for anything" aria-label="Search" onclick="showDropdown()">
+                <div class="dropdown" id="dropdown">
+                    <p class="dropdown-header">Top searches this week</p>
+                    <a href="products.html">
+                    <ul>
+                        <li onclick="toggleButton()" class="toggle-button"><img src="https://i.etsystatic.com/8622539/r/il/33df2c/3394664483/il_300x300.3394664483_rkys.jpg" alt="icon"/>Personalised Gifts</li>
+                        <li onclick="toggleButton()" class="toggle-button"><img src="https://i.etsystatic.com/10172021/r/il/4aebb0/4718920651/il_600x600.4718920651_p6yr.jpg" alt="icon"  />Baby Gifts</li>
+                        <li onclick="toggleButton()" class="toggle-button"><img src="https://i.etsystatic.com/48172987/c/2238/2238/173/450/il/9b9b35/6043477383/il_600x600.6043477383_6dff.jpg" alt="icon"/>Birthday Gifts</li>
+                        <li onclick="toggleButton()" class="toggle-button"><img src="https://i.etsystatic.com/14409281/c/1588/1588/0/637/il/82cc22/3652976053/il_600x600.3652976053_tvid.jpg" alt="icon" />Anniversary Gifts</li>
+                        <li onclick="toggleButton()" class="toggle-button"><img src="https://i.etsystatic.com/21898096/r/il/8b629f/6133969316/il_600x600.6133969316_8k1x.jpg" alt="icon" />Engagement Gifts</li>
+                        <li onclick="toggleButton()" class="toggle-button"><img src="https://i.etsystatic.com/12878858/c/1923/1923/544/289/il/3e56e9/6428652808/il_600x600.6428652808_kupw.jpg" alt="icon" />Gifts for Grandma</li>
+                      </ul>
+                    </a>
+                  </div>
+                <button class="btn btn-outline-light fs-5 search-btn rounded-circle" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </form>
+
+            
+            <div class="icons">
+                <i class="bi bi-heart icon"></i>
+                <i class="bi bi-gift icon"></i>
+                <i class="bi bi-bell icon"></i>
+                <i class="bi bi-cart icon"></i>
+            </div>
+        </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etsy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    
+
+        <div class="welcome-sec">
+            <p>Welcome Back..!</p>
+        </div>
+        <h2 class="heading1">Discover popular gifts from small shops</h2>
+
+        <a href="products.html">
+
+        <div class="popular-gifts d-flex">
+                <div class="card custom-card mx-auto">
+                    <img src="https://i.etsystatic.com/8622539/r/il/33df2c/3394664483/il_300x300.3394664483_rkys.jpg" alt="Personalized Gifts">
+                    <div class="card-body">
+                        <h6 class="custom-card-title">Personalised Gifts</h6>
+                    </div>
+                </div>
+            
+            
+
+            <div class="card custom-card mx-auto">
+                <img src="https://i.etsystatic.com/10172021/r/il/4aebb0/4718920651/il_600x600.4718920651_p6yr.jpg" alt="Personalized Gifts">
+                <div class="card-body">
+                    <h6 class="custom-card-title">Baby Gifts</h6>
+                </div>
+            </div>
+
+            <div class="card custom-card mx-auto">
+                <img src="https://i.etsystatic.com/48172987/c/2238/2238/173/450/il/9b9b35/6043477383/il_600x600.6043477383_6dff.jpg" alt="Personalized Gifts">
+                <div class="card-body">
+                    <h6 class="custom-card-title">Birthday Gifts</h6>
+                </div>
+            </div>
+
+            <div class="card custom-card mx-auto">
+            <img src="https://i.etsystatic.com/14409281/c/1588/1588/0/637/il/82cc22/3652976053/il_600x600.3652976053_tvid.jpg" alt="Personalized Gifts">
+            <div class="card-body">
+                <h6 class="custom-card-title">Aniversary Gifts</h6>
+            </div>
+            </div>
+
+            <div class="card custom-card mx-auto">
+            <img src="https://i.etsystatic.com/21898096/r/il/8b629f/6133969316/il_600x600.6133969316_8k1x.jpg" alt="Personalized Gifts">
+            <div class="card-body">
+                <h6 class="custom-card-title">Engagement Gifts</h6>
+            </div>
+            </div>
+
+            <div class="card custom-card mx-auto">
+            <img src="https://i.etsystatic.com/12878858/c/1923/1923/544/289/il/3e56e9/6428652808/il_600x600.6428652808_kupw.jpg" alt="Personalized Gifts">
+            <div class="card-body">
+                <h6 class="custom-card-title">Gifts for Grandma</h6>
+            </div>
+            </div>
+        </div>
+    </a>
+
+
+        <h2 class="heading2">Featured Catagories</h2>
+
+        <a href="products.html">
+        <div class="featured-catagories d-flex">
+            <div>
+                <div class="card custom-card1 mx-auto my-2">
+                    <img src="https://i.etsystatic.com/24426965/c/2261/1797/0/502/il/64732a/4144763037/il_600x600.4144763037_cm8c.jpg" alt="Personalized Gifts">
+                  </div>
+                  <h6>Wall decor</h6>
+            </div>
+            
+
+            <div>
+                <div class="card custom-card1 mx-auto my-2">
+                    <img src="https://i.etsystatic.com/29373260/r/il/d1e512/6023262912/il_600x600.6023262912_n1dj.jpg" alt="Personalized Gifts">
+                  </div>
+                  <h6>jouenals and notebooks</h6>
+
+            </div>
+              
+            <div>
+                <div class="card custom-card1 mx-auto my-2">
+                    <img src="https://i.etsystatic.com/26183470/r/il/14d0b2/6207962462/il_600x600.6207962462_3nde.jpg" alt="Personalized Gifts">
+                  </div>
+                  <h6>Digital Prints</h6>
+            </div>
+              
+
+            <div>
+                <div class="card custom-card1 mx-auto my-2">
+                    <img src="https://i.etsystatic.com/53120861/c/1428/1428/284/284/il/4f75d4/6368362117/il_600x600.6368362117_ep42.jpg" alt="Personalized Gifts">
+                  </div>
+                  <h6>Pendant necklaces</h6>
+            </div>
+              
+
+            <div>
+                <div class="card custom-card1 mx-auto my-2">
+                    <img src="https://i.etsystatic.com/10023039/r/il/27f38b/6455917815/il_600x600.6455917815_307d.jpg" alt="Personalized Gifts">
+                  </div>
+                  <h6>Wall decor</h6>
+            </div>
+              
+
+            <div>
+                <div class="card custom-card1 mx-auto my-2">
+                    <img src="https://i.etsystatic.com/36621968/r/il/37b061/6405223190/il_600x600.6405223190_lgpe.jpg" alt="Personalized Gifts">
+                </div>
+                  <h6>Christmas decorations</h6>
+            </div>
+              
+        </div>
+    </a>
+
+
+
+        <h2 class="heading2">Shop these unique items </h2>
+
+        <a href="products.html">
+        <div class="editors-next d-flex" >
+            <div>
+                <div class="image-container">
+                    <video src="https://v.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/ceramic_vase_handmade_yvggil.mp4" muted loop></video>
+                    <div class="overlay">
+                        <div class="price-tag">
+                            &#8377; 14,488
+                        </div>
+                        <div class="heart-icon">
+                            &#x2764;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image-container">
+                    <img src="https://i.etsystatic.com/21231997/c/1893/1893/614/0/il/d5c301/2078598039/il_600x600.2078598039_9qn1.jpg" alt="Table Setting">
+                    <div class="overlay">
+                        <div class="price-tag">
+                            &#8377; 1009
+                        </div>
+                        <div class="heart-icon">
+                            &#x2764;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image-container">
+                    <img src="https://i.etsystatic.com/35244786/r/il/c2c628/6333457904/il_600x600.6333457904_cn50.jpg" alt="Table Setting">
+                    <div class="overlay">
+                        <div class="price-tag">
+                            &#8377; 1844
+                        </div>
+                        <div class="heart-icon">
+                            &#x2764;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="image-container">
+                    <video src="https://v.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/file_xzdbxf.mp4" muted loop></video>
+                    <div class="overlay">
+                        <div class="price-tag">
+                            &#8377; 10,814
+                        </div>
+                        <div class="heart-icon">
+                            &#x2764;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </a>
+
+
+
+        <div class="editors-picks d-flex">
+                <div class="global-sellers">
+                    <div class="sub">
+                        <p>Editors’ Picks</p>
+                        <h3>Global Seller Spotlight</h3>
+                        <p>Join us on a journey around the world exploring extraordinary gifts from small shops.</p>
+                        <a href="products.html"><button class="global-sellers-btn" >Shop these unique finds</button></a>
+                    </div>
+                </div>
+                <a href="products.html">
+                <div class="videos">
+                    <div class="image-container">
+                        <img src="https://i.etsystatic.com/11651126/c/1999/1999/0/369/il/56604a/4286031459/il_600x600.4286031459_4vax.jpg" alt="Table Setting" >
+                        <div class="overlay">
+                            <div class="price-tag">
+                                &#8377; 2,813 &#8377; 3,517
+                            </div>
+                            <div class="heart-icon">
+                                &#x2764;
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="image-container">
+                        <video src="https://v.etsystatic.com/video/upload/ac_none,du_15,q_auto:good/IMG_0428_xxtng0.mp4" muted loop></video>
+                        <div class="overlay">
+                            <div class="price-tag">
+                                &#8377; 2,813 &#8377; 3,517
+                            </div>
+                            <div class="heart-icon">
+                                &#x2764;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            </div>
+            
+
+
+        
+        <h3 class="heading2">Shop extraordinary items at special prices</h3>
+
+        <a href="products.html">
+        <div class="featured-catagories d-flex">
+
+            <div class="card1">
+                <img src="https://i.etsystatic.com/32133570/r/il/1333e3/6456512255/il_300x300.6456512255_80ni.jpg" alt="Personalized Gifts">
+                <div class="card1-content">
+                  <div class="card1-title">Personalised Gifts</div>
+                  <div class="card1-offer">Up to 60% off</div>
+                </div>
+            </div>
+            
+
+              
+            <div class="card1">
+                <img src="https://i.etsystatic.com/38932392/r/il/95358b/5989178772/il_300x300.5989178772_67at.jpg">
+                <div class="card1-content">
+                  <div class="card1-title">Digital Download Gifts</div>
+                  <div class="card1-offer">Up to 20% off</div>
+                </div>
+            </div>
+
+
+            <div class="card1">
+                <img src="https://i.etsystatic.com/17305851/c/1923/1923/279/263/il/c76040/3470155659/il_300x300.3470155659_chfh.jpg">
+                <div class="card1-content">
+                  <div class="card1-title">Name puzzles</div>
+                  <div class="card1-offer">Up to 30% off</div>
+                </div>
+            </div>
+
+            
+            <div class="card1">
+                <img src="https://i.etsystatic.com/16632828/c/2184/2184/3/241/il/2e656c/6245255046/il_300x300.6245255046_1agz.jpg" alt="Personalized Gifts">
+                <div class="card1-content">
+                  <div class="card1-title">2025 Calenders</div>
+                  <div class="card1-offer">Up to 20% off</div>
+                </div>
+            </div>
+
+
+            <div class="card1">
+                <img src="https://i.etsystatic.com/32482363/c/2250/2250/379/0/il/a39a62/4997570881/il_300x300.4997570881_ivjn.jpg">
+                <div class="card1-content">
+                  <div class="card1-title">Custom pet portaits</div>
+                  <div class="card1-offer">Up to 30% off</div>
+                </div>
+            </div>
+              
+        </div>
+        </a>
+            
+
+        <div class="featured-catagories-next d-flex">
+            <div class="text-part">
+                <div>
+                    <p>Local finds? Etsy has it.</p>
+                    <h3>Discover shops in India</h3>
+                    <a href="products.html"><button class="global-sellers-btn">Shop from local makers</button></a>
+                </div>
+            </div>
+                
+                
+
+            <a href="products.html">
+            <div class="d-flex gap-3 discover" >
+                <div class=" card2">
+                    <img src="https://i.etsystatic.com/21239541/r/il/4def9d/4910855112/il_570xN.4910855112_dh40.jpg" alt="Personalized Gifts">
+                    <div class="card2-content">
+                        <img src="https://i.etsystatic.com/isla/bf4e84/50083633/isla_75x75.50083633_n58k8k4l.jpg?version=0" alt="">
+                      <div class="card2-title"><h5>HeritageKosh</h5></div>
+                    </div>
+                </div>
+                
+    
+                  
+                <div class="card2">
+                    <img src="https://i.etsystatic.com/30722423/r/il/561059/4023032570/il_570xN.4023032570_9326.jpg">
+                    <div class="card2-content">
+                        <img src="https://i.etsystatic.com/isla/686b26/53308097/isla_75x75.53308097_8g8tljs6.jpg?version=0" alt="">
+                      <div class="card2-title"><h5>HastaKaushalIndia</h5></div>
+                    </div>
+                </div>
+                <div class="card2">
+                    <img src="https://i.etsystatic.com/14087687/r/il/035064/6498738168/il_570xN.6498738168_c4m9.jpg">
+                    <div class="card2-content">
+                        <img src="https://i.etsystatic.com/isla/2cad82/53458107/isla_75x75.53458107_s7791ys4.jpg?version=0" alt="">
+                      <div class="card2-title"><h5>Digital Download Gifts</h5></div>
+                    </div>
+                </div>
+    
+            </div>
+        </a>
+            
+
+        </div>
+            
+        <div class="d-flex gap-3 align-items-center heading2">
+            <h3>Fresh from blog</h3>
+            <i class="bi bi-arrow-right"></i>
+        </div>
+        <a href="products.html">
+        <div class="d-flex gap-3 blogs">
+            <div class=" card3">
+                <img src="https://i.etsystatic.com/inv/73f1ea/5310016542/inv_620x495.5310016542_ukkxc6qi.jpg?version=0">
+                <div class="card3-content">
+                    <p>Shopping Guides</p>
+                    <h5>9 Comfy Trows for Cosy Autumn Vibes</h5>
+                    <p class="para">Embrace the snuggling season with stylish thorws that will your hearts.</p>                </div>
+            </div>
+            
+
+            
+            <div class=" card3">
+                <img src="https://i.etsystatic.com/inv/1b86b2/5514321927/inv_425x340.5514321927_50cniifw.jpg?version=0">
+                <div class="card3-content">
+                    <p>Shopping Guides</p>
+                    <h5>14 Beatiful bags that Express your unique Style</h5>
+                    <p class="para">Amp up your fashion game with bags that perfectlly math your asthetic.</p>                </div>
+            </div>
+              
+            <div class="card3">
+                <img src="https://i.etsystatic.com/inv/0c0724/5507381345/inv_425x340.5507381345_8imomvyj.jpg?version=0">
+                <div class="card3-content">
+                    <p>Gift Ideas </p>
+                    <h5>The best gift ideas for kids of all Ages</h5>
+                    <p class="para">shop the sweetest surprises for all little ones inyour family these gifts for kids will definitely earn you some brownie points.</p>  
+                </div>
+            </div>
+
+        </div>
+        </a>
+
+
+        <div class="questions-sec">
+            <div class="questions">
+                <h1>What is Etsy India?</h1>
+                <p>Etsy is a global marketplace for creative and one-of-a-kind goods. It’s home to a universe of special, extraordinary items, from unique home decor pieces to trending fashion finds. Founded in 2005, Etsy began its Indian journey in 2018..</p>
+                <p>Etsy is a place where creativity lives and thrives because it’s powered by people just like you. We help our community of 5.9 million active sellers worldwide turn their ideas into successful small businesses. Our platform connects them with 89.9 million active buyers looking for something special that enables them to express their unique identity.</p>
+
+                <h5>Why choose Etsy?<br><b>A community doing good</b></h5>
+                <p>Etsy is where people come together to make, sell, buy, and collect unique items. We’re also a community pushing for positive change for small businesses, people, and the planet. Here are some of the ways we’re making a positive impact, together:
+                </p>
+                <p>Your purchases on Etsy in 2021 generated nearly $4 billion in income for small businesses.</p>
+                <p>We advocate for policy—at the global and local level—that benefits creative entrepreneurs and helps small businesses grow and thrive.</p>
+
+                <h5>What can you shop on Etsy?</h5>
+                <p>The imagination of Etsy sellers can run far and wide, which makes our platform a home to more than 100 million active listings across home, style, and gifts.</p>
+                <p><b>Home & Living:</b> Whether you’re setting up a new apartment or making small upgrades for a home refresh, you’ll find everything you need to make your home a reflection of your personality on Etsy. From traditional elements like Jaipuri bedding, masala boxes, and Madhubani paintings to modern essentials like sleek table lamps, vibrant indoor planters, and decorative platters, Etsy sellers have much to offer.</p>
+                <p><b>Clothing:</b> Your unique fashion style deserves outfits that can match it. Discover tie-dye kaftans, linen shirts, hand-painted sarees, chikankari kurtis, ajrakh scarves and so much more—from small sellers who understand your aesthetic just as much as your comfort.</p>
+                <p><b></b> The gajra for your friend’s haldi ceremony or the gemstone ring that represents your zodiac—sometimes, the little things can make the biggest impact. Etsy has it all and more! Explore a range of beautiful fashion accessories and jewellery for all the occasions you have planned.</p>
+
+
+                <h5>How to buy on Etsy?</h5>
+                <p>If you’re looking for something specific, start by putting in the keywords in our search and then using filters to narrow down the results. You can even message the sellers with any questions or requests you may have before placing an order with them.</p>
+                <p>If you’re looking for inspiration, head on over to our Editor’s Picks or look out for the latest updates on our Journal to discover extraordinary items.</p>
+                <h5>How to sell on Etsy?</h5>
+                <p>You can sell handmade goods, vintage items, and craft supplies on Etsy. With low fees, powerful tools, and support and education, we help creative entrepreneurs start, manage, and scale their businesses. Want to open a shop? All it takes is Rs. 16* to start selling on Etsy.</p>
+
+                <p>Listing fees are billed for 0.20 USD, so if your bank's currency is not USD, the amount in your currency may vary based on changes in the exchange rate.</p>
+
+                <h4>Have a question? Well, we’ve got some answers.</h4>
+            </div>
+        </div>
+
+        <div class="last">
+
+            <div>
+                <h5>Shop</h5>
+                <p>Gift cards</p>
+                <p>Etsy Registry</p>
+                <p>Sitemap</p>
+                <p>Etsy blog</p>
+            </div>
+            <div>
+                <h5>Sell</h5>
+                <p>Sell on Etsy</p>
+                <p>Teams</p>
+                <p>Forums</p>
+            </div>
+            <div>
+                <h5>About</h5>
+                <p>Etsy,Inc</p>
+                <p>Polices</p>
+                <p>Investers</p>
+                <p>Careers</p>
+            </div>
+            <div>
+                <h5>Help</h5>
+                <p>Help Centre</p>
+                <p>Privacy setting</p>
+                
+            </div>
+        </div>
+
+        <div id="popup-modal" class="popup-modal">
+            <div class="popup-content">
+              <span class="close-btn" onclick="closePopup()">&times;</span>
+              <p>You need to sign in or log in to continue.</p>
+              <a href="login.html">
+                <button class="btn btn-outline-dark btn-sm rounded-pill fw-bold px-3">Log in</button>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./scripts/main.js"></script>
+
+</body>
+</html>
